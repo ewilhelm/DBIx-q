@@ -1,13 +1,11 @@
-
-
 INSTALLATION
 
-
+  perl Build.PL
+  ./Build test
+  ./Build install
 
 DOCUMENTATION
 
 After installing, you can find documentation for this module with the perldoc command.
 
-    perldoc DBIx::q
-
-
+  perldoc DBIx::q
