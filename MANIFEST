@@ -1,0 +1,8 @@
+Build.PL
+Changes
+lib/DBIx/q.pm
+MANIFEST
+MANIFEST.SKIP
+META.yml
+README
+t/00-load.t
