@@ -8,6 +8,6 @@ DOCUMENTATION
 
 After installing, you can find documentation for this module with the perldoc command.
 
-    perldoc 
+    perldoc DBIx::q
 
 
