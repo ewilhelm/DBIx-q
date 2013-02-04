@@ -124,10 +124,10 @@ sub SELECT {
   my $bind = pop(@q) if ref($q[-1]);
   my @fields = ref($q[0]) ? do {
     my $f = shift(@q);
-    ref($f) eq 'HASH' ? map({"$_ AS $f->{$_}" keys %$f) : @$f
+    ref($f) eq 'HASH' ? map({"$_ AS $f->{$_}"} keys %$f) : @$f
   } : ('*');
 
-  my $sth = $self->prepare(join(' ', SELECT => join(',', @fields), @q);
+  my $sth = $self->prepare(join(' ', SELECT => join(',', @fields), @q));
   $sth->execute(@$bind);
 } # SELECT #############################################################
 
